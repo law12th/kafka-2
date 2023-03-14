@@ -1,5 +1,5 @@
 object Utils {
-    val jsonPayload: String = """
+    val jsonStringPayload: String = """
         [
          {
             "course": "science",

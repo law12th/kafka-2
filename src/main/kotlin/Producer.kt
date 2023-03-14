@@ -15,7 +15,7 @@ class Producer(
             put(ProducerConfig.ACKS_CONFIG, "all")
             put(ProducerConfig.RETRIES_CONFIG, "10")
             put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer::class.java.name)
-            put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer::class.java.name )
+            put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer::class.java.name)
         }
 
         producer = KafkaProducer<String, String>(properties)
